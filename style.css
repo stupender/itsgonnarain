@@ -1,0 +1,11 @@
+body {
+    /* background-image: url("./giphy.gif"); */
+    background-color: black;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 100%;
+    align-self: center;
+}
