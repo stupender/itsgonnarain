@@ -15,8 +15,8 @@ fetch('audio/MixPre-132.mp3')
     startLoop1(audioBuffer, -1, 1.0);
 
 
-    startLoop2(audioBuffer, 1, 2.02);
-    startLoop2(audioBuffer, -1, 2.0);
+    // startLoop2(audioBuffer, 1, 2.02);
+    // startLoop2(audioBuffer, -1, 2.0);
     startLoop2(audioBuffer, 1, 1.01);
     startLoop2(audioBuffer, -1, 1.0);
 
