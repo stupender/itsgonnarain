@@ -5,19 +5,23 @@ let audioContext = new AudioContext();
 audioContext.resume()
 
 
-fetch('MixPre-132.mp3')
+fetch('audio/MixPre-132.mp3')
 .then(response => response.arrayBuffer())
 .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
 .then(audioBuffer => {
     startLoop1(audioBuffer, 1, 1.01);
     startLoop1(audioBuffer, -1, 1.0);
+
     startLoop2(audioBuffer, 1, 2.02);
     startLoop2(audioBuffer, -1, 2.0);
+    startLoop2(audioBuffer, 1, 1.01);
+    startLoop2(audioBuffer, -1, 1.0);
+
 })
 .catch(e => console.error(e));
 
 
-fetch('vocal.mp3')
+fetch('audio/vocal.mp3')
 .then(response => response.arrayBuffer())
 .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
 .then(audioBuffer => {
