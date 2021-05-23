@@ -99,8 +99,11 @@ function startLoop2(audioBuffer, pan = 0, rate = 1) {
 }
 
 
-let image = document.querySelector('#gif');
-image.addEventListener(onclick, audioContext.resume())
-
+document.querySelector('body').addEventListener('click', function() {
+    audioContext.resume().then(() => {
+      console.log('Playback resumed successfully');
+    });
+  });
+  
 // With help from:
 // https://teropa.info/blog/2016/07/28/javascript-systems-music.html#is-this-for-me
