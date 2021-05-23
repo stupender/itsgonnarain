@@ -1,9 +1,9 @@
 console.log("It's gonna rain");
 
-
 let audioContext = new AudioContext();
 
-audioContext.resume();
+audioContext.resume()
+
 
 fetch('MixPre-132.mp3')
 .then(response => response.arrayBuffer())
@@ -33,8 +33,6 @@ fetch('vocal.mp3')
     startVocalLoop(audioBuffer, 1, .5001);
 
     startVocalLoop(audioBuffer, 0, 1.5);
-
-
 })
 .catch(e => console.error(e));
 
@@ -99,6 +97,10 @@ function startLoop2(audioBuffer, pan = 0, rate = 1) {
 
     sourceNode.start(0, 21.1);
 }
+
+
+let image = document.querySelector('#gif');
+image.addEventListener(onclick, audioContext.resume())
 
 // With help from:
 // https://teropa.info/blog/2016/07/28/javascript-systems-music.html#is-this-for-me
