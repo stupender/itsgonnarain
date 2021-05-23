@@ -9,3 +9,20 @@ img {
     width: 100%;
     align-self: center;
 }
+
+h1 {
+    color: #c5d4f8;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+}
