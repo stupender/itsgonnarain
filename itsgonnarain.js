@@ -48,7 +48,7 @@ function startVocalLoop(audioBuffer, pan = 0, rate = 1) {
 
     sourceNode.buffer = audioBuffer;
     sourceNode.loop = true;
-    sourceNode.loopStart = 1;
+    sourceNode.loopStart = 1.09;
     sourceNode.loopEnd = 7;
     sourceNode.playbackRate.value = rate;
     pannerNode.pan.value = pan;
@@ -56,7 +56,7 @@ function startVocalLoop(audioBuffer, pan = 0, rate = 1) {
     sourceNode.connect(pannerNode);
     pannerNode.connect(audioContext.destination);
 
-    sourceNode.start(0, 1);
+    sourceNode.start(0, 1.09);
 }
 
 
